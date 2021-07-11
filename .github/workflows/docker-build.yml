@@ -23,7 +23,7 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64
         push: true
-        tags: IrhamFadzillah/cyber:buster
+        tags: irhamfadzillah/cyber:buster
         
     - name: send telegram message
       run: |
