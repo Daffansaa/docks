@@ -23,11 +23,11 @@ jobs:
         file: ./Dockerfile
         platforms: linux/amd64
         push: true
-        tags: irhamfadzillah/cyber:buster
+        tags: daffansaa/docks:buster
         
     - name: send telegram message
       run: |
           function sendTG() {
           curl -s "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendmessage" --data "text=${*}&chat_id=${{ secrets.TELEGRAM_TO }}&parse_mode=Markdown"
           }
-          sendTG "\`I have pushed new images to docker\` %0A[Image are here](https://hub.docker.com/r/irhamfadzillah/cyber/tags)" &> /dev/null
+          sendTG "\`I have pushed new images to docker\` %0A[Image are here](https://hub.docker.com/r/daffansaa/docks/tags)" &> /dev/null
