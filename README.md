@@ -3,7 +3,7 @@ Docker for [DAPA](https://github.com/Daffansaa/DAPA-UBOT) Userbot
 
 ## How to Use?
 ```
-docker pull ythm00/cyber:groovy
+docker pull Daffansaa/DAPA:groovy
 ```
 
 ## Build Status
